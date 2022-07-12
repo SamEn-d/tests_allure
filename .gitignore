@@ -1,6 +1,6 @@
-#Alure
-
+#Alure -alluredir=allure-results
+tests/allure-results
 
 #Venv
-/venv
+venv
 .idea
