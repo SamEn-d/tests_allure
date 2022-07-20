@@ -7,7 +7,6 @@ from allure_commons.types import Severity
 @allure.feature('Задачи \ Issues в репозитории')
 @allure.story('Проверка Issues через PageObject')
 @allure.title('Проверка Issues через PageObject Title')
-@allure.link(link)
 def test_git_allure_steps():
     pass
 
