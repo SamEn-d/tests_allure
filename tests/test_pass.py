@@ -9,4 +9,5 @@ from allure_commons.types import Severity
 @allure.title('Проверка Issues через PageObject Title')
 def test_git_allure_steps():
     pass
+#s
 
