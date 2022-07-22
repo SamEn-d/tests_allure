@@ -15,7 +15,7 @@ def test_git_with_steps():
     allure.dynamic.link(link)
     allure.dynamic.label('owner','Sam')
     allure.dynamic.description('Описание для понимания')
-    allure.dynamic.feature('Задачи \ Issues в репозитории')
+    allure.dynamic.feature('Задачи Issues в репозитории')
     allure.dynamic.title('Проверка Issues через тест в 1 файле TITLE')
     browser_parametrs()
 
@@ -40,7 +40,7 @@ def test_git_with_steps():
 @allure.tag('GitHub')
 @allure.severity(Severity.MINOR)
 @allure.label('owner','Sam')
-@allure.feature('Задачи \ Issues в репозитории')
+@allure.feature('Задачи Issues в репозитории')
 @allure.story('Проверка Issues через PageObject')
 @allure.title('Проверка Issues через PageObject Title')
 @allure.link(link)
