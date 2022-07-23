@@ -1,6 +1,6 @@
 from selene import by, be
 from selene.support.shared import browser
-from tests_allure.browser import browser_parametrs
+from tests_allure.browser_config import browser_parametrs
 
 
 def test_git():

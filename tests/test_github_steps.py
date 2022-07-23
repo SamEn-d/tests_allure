@@ -2,12 +2,10 @@ import allure
 from allure_commons.types import Severity
 from selene import by, be
 from selene.support.shared import browser
+from tests_allure import browser_config#browser_parametrs
 from tests_allure.pages import github_steps
 from allure_commons.types import AttachmentType
 
-def browser_parametrs():
-    browser.config.window_width = 1920
-    browser.config.window_height = 1080
 
 link = 'https://github.com/'
 
@@ -20,7 +18,7 @@ def test_git_with_steps():
     allure.dynamic.description('Описание для понимания')
     allure.dynamic.feature('Задачи Issues в репозитории')
     allure.dynamic.title('Проверка Issues через тест в 1 файле TITLE')
-    browser_parametrs()
+    browser_config.browser_parametrs()
 
     with allure.step('Открываем главную страницу'):
         browser.open('https://github.com/')
