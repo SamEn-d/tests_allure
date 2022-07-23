@@ -2,9 +2,12 @@ import allure
 from allure_commons.types import Severity
 from selene import by, be
 from selene.support.shared import browser
-from tests_allure.browser import browser_parametrs
 from tests_allure.pages import github_steps
 from allure_commons.types import AttachmentType
+
+def browser_parametrs():
+    browser.config.window_width = 1920
+    browser.config.window_height = 1080
 
 link = 'https://github.com/'
 
