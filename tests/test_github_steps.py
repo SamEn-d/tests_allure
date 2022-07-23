@@ -2,8 +2,8 @@ import allure
 from allure_commons.types import Severity
 from selene import by, be
 from selene.support.shared import browser
-from tests_allure import browser_config#browser_parametrs
-from tests_allure.pages import github_steps
+from configuration import browser_config#browser_parametrs
+from configuration.pages import github_steps
 from allure_commons.types import AttachmentType
 
 
@@ -48,8 +48,8 @@ def test_git_with_steps():
 def test_git_allure_steps():
     browser_parametrs()
     github_steps.open_page(link)
-    github_steps.search_text('SamEn-d/tests_allure')
-    github_steps.go_to_repository('SamEn-d/tests_allure')
+    github_steps.search_text('SamEn-d/configuration')
+    github_steps.go_to_repository('SamEn-d/configuration')
     github_steps.search_issues()
     github_steps.search_issues_number('#1')
     allure.attach(browser.driver.get_screenshot_as_png(), name="Screenshot", attachment_type=AttachmentType.PNG)
